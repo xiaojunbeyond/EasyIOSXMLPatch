@@ -1,0 +1,25 @@
+{
+  "name": "EasyIOSXMLPatch",
+  "version": "0.1.0",
+  "summary": "A short description of EasyIOSXMLPatch.",
+  "description": "",
+  "homepage": "https://github.com/<GITHUB_USERNAME>/EasyIOSXMLPatch",
+  "license": "MIT",
+  "authors": {
+    "xiaojunkingwolf": "xiaojunkingwolf@aliyun.com"
+  },
+  "source": {
+    "git": "https://github.com/<GITHUB_USERNAME>/EasyIOSXMLPatch.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "7.0"
+  },
+  "requires_arc": true,
+  "source_files": "Pod/Classes/**/*",
+  "resource_bundles": {
+    "EasyIOSXMLPatch": [
+      "Pod/Assets/*.png"
+    ]
+  }
+}

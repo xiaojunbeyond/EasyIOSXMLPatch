@@ -13,3 +13,4 @@ target 'EasyIOSXMLPatch_Tests', :exclusive => true do
   pod 'FBSnapshotTestCase'
   pod 'Expecta+Snapshots'
 end
+
