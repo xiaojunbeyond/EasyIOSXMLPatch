@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "EasyIOSXMLPatch"
-  s.version          = "0.1.0"
+  s.version          = "0.1.1"
   s.summary          = "EasyIOS patch  description of EasyIOSXMLPatch."
   s.description      = "A new generation of development framework based on Model-View-ViewModel"
   s.homepage         = "https://github.com/xiaojunbeyond/EasyIOSXMLPatch"
