@@ -9,16 +9,8 @@
 Pod::Spec.new do |s|
   s.name             = "EasyIOSXMLPatch"
   s.version          = "0.1.0"
-  s.summary          = "A short description of EasyIOSXMLPatch."
-
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!  
-  s.description      = <<-DESC
-                       DESC
-
+  s.summary          = "EasyIOS patch  description of EasyIOSXMLPatch."
+  s.description      = "A new generation of development framework based on Model-View-ViewModel"
   s.homepage         = "https://github.com/xiaojunbeyond/EasyIOSXMLPatch"
   # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
   s.license          = 'MIT'
@@ -29,17 +21,17 @@ Pod::Spec.new do |s|
   s.platform     = :ios, '7.0'
   s.requires_arc = true
 
-  s.source_files = 'Pod/Classes/**/*'
-  s.resource_bundles = {
-    'EasyIOSXMLPatch' => ['Pod/Assets/*.png']
-  }
+  #s.source_files = 'Pod/Classes/**/*'
+  #s.resource_bundles = {
+  #  'EasyIOSXMLPatch' => ['Pod/Assets/*.png']
+  #}
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   s.framework             = "CoreFoundation","Foundation","CoreGraphics","Security","UIKit"
   s.library             = "z.1.1.3","stdc++","sqlite3"
   s.subspec 'Easy' do |sp|
-    sp.source_files = '*.{h,m,mm}','Easy/**/*.{h,m,mm}','Extend/**/*.{h,m,mm}'
-    sp.resources   = "Extend/**/*.{png}"
+    sp.source_files = '*.{h,m,mm}','Pod/Classes/Easy/**/*.{h,m,mm}','Pod/Classes/Extend/**/*.{h,m,mm}'
+    sp.resources   = "Pod/Classes/Extend/**/*.{png}"
     sp.requires_arc = true
     sp.xcconfig = { 'HEADER_SEARCH_PATHS' => '$(SDKROOT)/usr/include/libz, $(SDKROOT)/usr/include/libxml2', 'CLANG_CXX_LANGUAGE_STANDARD' => 'gnu++0x', 'CLANG_CXX_LIBRARY' => 'libstdc++', 'CLANG_WARN_DIRECT_OBJC_ISA_USAGE' => 'YES'}
     sp.dependency 'ReactiveCocoa'
